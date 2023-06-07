@@ -16,4 +16,22 @@ public class MainTest {
 
         assertEquals("4", actual);
     }
+
+
+    @Test
+    void fizzBuzzTest_isDividableBy3(){
+        //Ist die Zahl durch 3 teilbar, gib fizz zurück.
+
+        //GIVEN
+        int number = 3;
+        Main main = new Main();
+
+        //WHEN
+        String actual = main.fizzBuzz(number);
+
+        //THEN
+        String expected = "fizz";
+        assertEquals(expected, actual);
+    }
+
 }
