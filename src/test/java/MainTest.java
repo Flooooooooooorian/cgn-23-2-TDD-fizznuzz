@@ -34,4 +34,20 @@ public class MainTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void fizzBuzzTest_isDividableBy5() {
+        //Ist die Zahl durch 5 teilbar, gib buzz zurück.
+
+        //GIVEN
+        int number = 5;
+        Main main = new Main();
+
+        //WHEN
+        String actual = main.fizzBuzz(number);
+
+        //THEN
+        String expected = "buzz";
+        assertEquals(expected, actual);
+    }
+
 }
