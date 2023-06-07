@@ -50,4 +50,20 @@ public class MainTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void fizzBuzzTest_isDividableBy3And5() {
+        //Ist die Zahl durch 3 und 5 teilbar, gib fizzbuzz zurück.
+
+        //GIVEN
+        int number = 15;
+        Main main = new Main();
+
+        //WHEN
+        String actual = main.fizzBuzz(number);
+
+        //THEN
+        String expected = "fizzbuzz";
+        assertEquals(expected, actual);
+    }
+
 }
